@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Speech</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="d-flex justify-content-center align-items-center" onload="bgDisplay()">
+    <div class="box">
+        <div class="box-header pt-4 pb-3">
+            <h2 class="box-title text-center">Text To Speech Converter</h2>
+        </div>
+        <div class="box-form d-flex justify-content-center">
+            <div>
+                <div class="d-flex justify-content-between">
+                    <p class="text mb-0">Enter Text:</p>
+                    <div>
+                        <label>
+                            <input type="radio" name="voice" value="male" checked> Male Voice
+                        </label>
+                        
+                        <label>
+                            <input type="radio" name="voice" value="female"> Female Voice
+                        </label>
+                    </div>
+                </div>
+                <textarea id="text" oninvalid="Text" class="text-input"></textarea>
+            </div>
+        </div>
+        <div class="py-4 d-flex justify-content-center">
+            <button onclick="speak()" class="btn btn-dark px-4">Convert</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
